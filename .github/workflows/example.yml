@@ -11,7 +11,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Unsupport Go project with BoM
+      - name: untrust Go project with BoM
         #--> Run the GitHub action
         uses: codenotary/vcn-untrust-bom-go-github-action@v1.0.0
         # uses: codenotary/vcn-untrust-bom-go-github-action@main
@@ -35,7 +35,7 @@ jobs:
       - name: Build Go binary
         run: go build .
 
-      - name: Unsupport Go binary with BoM
+      - name: untrust Go binary with BoM
         #--> Run the GitHub action
         uses: codenotary/vcn-untrust-bom-go-github-action@v1.0.0
         # uses: codenotary/vcn-untrust-bom-go-github-action@main
